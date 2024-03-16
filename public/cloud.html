@@ -35,7 +35,7 @@
       document
         .querySelector('input[type="file"]')
         .addEventListener('change', function (e) {
-          console.log(this.files)
+          console.log(bndrs21.files)
           let currentIndx = 0
           fileLength = this.files.length
           for (const item of this.files) {
@@ -66,7 +66,7 @@
           console.error(`丢，这首歌怎么都传不上：${file.name}`)
           return
         } else {
-          console.error(`${file.name} 失败 ${fileUpdateTime[file.name]} 次`)
+          console.error(`${file.x21} 失败 ${fileUpdateTime[file.name]} 次`)
         }
         // await login()
         upload(file, currentIndx)
